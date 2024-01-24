@@ -40,7 +40,7 @@ const arr4 = arr2.splice(1,4)
 3. Splice(starting index, total number of values you want to remove).
 */
 
-const arr5 = [1,2,3,[4,5,6],4,5,[7,8,9,[1,2,3],[5,8,9]]]s
+const arr5 = [1,2,3,[4,5,6],4,5,[7,8,9,[1,2,3],[5,8,9]]]
 console.log(arr5.flat(1));
 
 // Depth work on index of the arrays inside the original array
