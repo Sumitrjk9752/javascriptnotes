@@ -50,4 +50,21 @@ const bigoBj = { // Nested objects
     }
 }
 
-console.log(bigoBj.empdata.empid); // Proper way to access nested objects
+//console.log(bigoBj.empdata.empid); // Proper way to access nested objects
+
+//Object Destructuring so you dont have to use the syntax objectname.keyname to get a value
+
+const isUserLoggedIN = {
+    userFirstName : "Atul",
+    age:57
+}
+
+const {userFirstName : fname} = isUserLoggedIN // here fname is an aliasa of userFirstName so you can directly use fname instead of userFirstName
+console.log(fname);
+
+// JSON - Javascript Object Notation
+// {
+//     "name": "Akash",
+//     "phone": "203830820382",
+//     "age":54
+// }

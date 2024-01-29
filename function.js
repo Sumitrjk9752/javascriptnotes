@@ -38,7 +38,7 @@ function cartPrice(...num6){
 // Rest will save all the values provided and convert it into an array.
 
 
-function myName(username){ // To pass default value if nothing is passed when calling the function
+function myName(username = "Sam"){ // To pass default value if nothing is passed when calling the function
     //if(!username){
     if(username === undefined){
         console.log("Please enter username");
@@ -47,4 +47,43 @@ function myName(username){ // To pass default value if nothing is passed when ca
     return `${username} is logged in`
 }
 
-console.log(myName());
+//console.log(myName());
+
+
+const newObj = {
+    user: "Atul",
+    age: 32,
+    message : function(){
+        return (`${this.user} is logged in`)
+    }
+}
+
+// console.log(newObj.message())
+
+function myName(){
+    let username = "Avinash"
+    return username
+}
+// console.log(myName())
+// This is not used in function direcetly as it will always return global properties of the function
+
+const newFunc = () => { return user = "Avi"}
+// console.log(newFunc())
+
+// const superman = (num1, num2) => num1+num2 // Implicit return
+const superman = (num1, num2) => ({username : "Avinash"}) // Implicit return
+// const superman = (num1, num2) => (num1+num2) -another way to return
+
+// console.log(superman(3,4))
+
+//IIFE -- Immediately Invoked Function Expression
+(function definition)(function invoke)
+()()
+((a)=>{
+
+})(3) // IIFE with parameters
+(function myNewA(){})() // Named IIFE
+
+
+
+
